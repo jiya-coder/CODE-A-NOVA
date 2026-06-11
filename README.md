@@ -54,7 +54,7 @@ Ensure you have [Node.js](https://nodejs.org/) installed on your machine.
 ### 1. Clone the Repository
 ```bash
 git clone https://github.com/jiya-coder/CODE-A-NOVA.git
-cd CODE-A-NOVA
+cd CODE-A-NOVA/Project-1
 ```
 
 ### 2. Install Dependencies
