@@ -1,5 +1,5 @@
 /* ==========================================================================
-    Nimbus Weather App - Logic, APIs, Autocomplete & Dynamic Canvas Particles
+    SkyCast Weather App - Logic, APIs, Autocomplete & Dynamic Canvas Particles
    ========================================================================== */
 
 // --------------------------------------------------------------------------
@@ -376,8 +376,8 @@ function getWeatherConfig(code, isDay = 1) {
 // 2. Global State Management
 // --------------------------------------------------------------------------
 const STATE = {
-  unit: localStorage.getItem('nimbus-unit') || 'C', // 'C' or 'F'
-  currentLoc: JSON.parse(localStorage.getItem('nimbus-last-loc')) || {
+  unit: localStorage.getItem('skycast-unit') || 'C', // 'C' or 'F'
+  currentLoc: JSON.parse(localStorage.getItem('skycast-last-loc')) || {
     lat: 40.7128,
     lon: -74.0060,
     name: 'New York, United States'
@@ -884,7 +884,7 @@ function selectSuggestion(item) {
   clearSuggestions();
   
   // Persist local selection
-  localStorage.setItem('nimbus-last-loc', JSON.stringify(STATE.currentLoc));
+  localStorage.setItem('skycast-last-loc', JSON.stringify(STATE.currentLoc));
   
   // Fetch weather data
   loadWeatherData();
@@ -1217,7 +1217,7 @@ async function locateUser() {
       };
 
       // Persist locally
-      localStorage.setItem('nimbus-last-loc', JSON.stringify(STATE.currentLoc));
+      localStorage.setItem('skycast-last-loc', JSON.stringify(STATE.currentLoc));
       
       // Load weather details
       loadWeatherData();
@@ -1296,7 +1296,7 @@ function initializeApp() {
   DOM.unitC.addEventListener('click', () => {
     if (STATE.unit === 'C') return;
     STATE.unit = 'C';
-    localStorage.setItem('nimbus-unit', 'C');
+    localStorage.setItem('skycast-unit', 'C');
     DOM.unitF.classList.remove('active');
     DOM.unitC.classList.add('active');
     
@@ -1308,7 +1308,7 @@ function initializeApp() {
   DOM.unitF.addEventListener('click', () => {
     if (STATE.unit === 'F') return;
     STATE.unit = 'F';
-    localStorage.setItem('nimbus-unit', 'F');
+    localStorage.setItem('skycast-unit', 'F');
     DOM.unitC.classList.remove('active');
     DOM.unitF.classList.add('active');
     

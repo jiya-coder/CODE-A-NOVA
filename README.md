@@ -1,6 +1,6 @@
-# Nimbus Weather App (CODE-A-NOVA)
+# SkyCast Weather App (CODE-A-NOVA)
 
-A premium, highly interactive Single Page Weather Application ("Nimbus") designed to display real-time weather information and short-term forecasts. It features dynamic canvas particle effects (rain, snow, drifting clouds, sun rays) that respond in real time to current weather conditions, packaged inside a beautiful glassmorphic UI.
+A premium, highly interactive Single Page Weather Application ("SkyCast") designed to display real-time weather information and short-term forecasts. It features dynamic canvas particle effects (rain, snow, drifting clouds, sun rays) that respond in real time to current weather conditions, packaged inside a beautiful glassmorphic UI.
 
 **GitHub Repository URL**: [https://github.com/jiya-coder/CODE-A-NOVA](https://github.com/jiya-coder/CODE-A-NOVA)
 
